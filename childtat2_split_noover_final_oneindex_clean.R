@@ -35,7 +35,7 @@ chilt2split$visnum[2]=10132018
 chilt2split$subvis <- paste(chilt2split$ChildID, chilt2split$visnum, sep= "_")
 
 
-#Get rid of other roi and screen out repeated subj
+#Get rid of other roi and screen out repeated subj. One doesn't carry over to common subjects
 chilt2split <- chilt2split %>% filter (roi !=2)
 chilt2split <- chilt2split %>% filter (subvis !="2139_05052018", subvis !="2119_03182018", subvis !="2165_04072018", subvis !="2184_09222018", subvis !="2087_03032018")
 
